@@ -42,11 +42,11 @@ A RESTful API service for code submission and execution similar to LeetCode, pow
    PORT=3001
    NODE_ENV=development
    DB_USERNAME=root
-   DB_PASSWORD=123456
+   DB_PASSWORD=
    DB_NAME=leetcode_db
    DB_HOST=127.0.0.1
    DB_PORT=3306
-   JUDGE0_API_URL=http://103.20.96.192:2358
+   JUDGE0_API_URL=
    RATE_LIMIT_WINDOW_MS=900000
    RATE_LIMIT_MAX_REQUESTS=100
    CORS_ORIGIN=http://localhost:5173
@@ -151,9 +151,6 @@ The project includes comprehensive seed data:
 # Run all seeds
 npx sequelize-cli db:seed:all
 
-# Run specific seed
-npx sequelize-cli db:seed --seed 20250828000001-javascript-problems.js
-
 # Undo all seeds
 npx sequelize-cli db:seed:undo:all
 ```
@@ -195,7 +192,7 @@ leetcode-api/
 ## 🌐 Judge0 Integration
 
 This API integrates with Judge0 for code execution:
-- **Endpoint**: http://103.20.96.192:2358
+- **Endpoint**: 
 - **Languages**: 40+ programming languages supported
 - **Limits**: Configurable CPU time, memory, and wall time limits
 - **Security**: Sandboxed execution environment
